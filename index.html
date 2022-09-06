@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Web-тест</title>
+		<link href="style.css" rel="stylesheet">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="question_block">
+			<div>
+				<p>1. Контейнер, который заключает в себе все содержимое веб-страницы:</p>
+				<select id="q1">
+					<option value=1>html</option>
+					<option value=2>head</option>
+					<option value=3>body</option>
+				</select>
+			</div>
+		</div>
+		<div class="question_block">
+			<div>
+				<p>2. Страница index.php обрабатывается web-сервером и передается браузеру клиента. Что из нижеперечисленного будет недоступно для клиента?</p>
+				<ul>
+					<li><input id="q2_1" type="checkbox"/><label>HTML</label></li>
+					<li><input id="q2_2" type="checkbox"/><label>CSS</label></li>
+					<li><input id="q2_3" type="checkbox"/><label>JavaScript</label></li>
+					<li><input id="q2_4" type="checkbox"/><label>PHP</label></li>
+				</ul>
+			</div>
+		</div>
+		<div class="question_block">
+			<div>
+				<p>3. Днем появления Интернета считается день, когда между двумя первыми узлами сети ARPANET, находящимися на расстоянии в 640 км — в Калифорнийском университете Лос-Анджелеса (UCLA) и в Стэнфордском исследовательском институте (SRI) — провели сеанс связи. Когда это было?</p>
+				<input id="q3" type="date" />
+			</div>
+		</div>
+		<div class="question_block">
+			<div>
+				<p>4. Номер версии HTML, доступный с 2014 г. и по сей день:</p>
+				<form onsubmit="return false" oninput="oversion.value = 'HTML '+iversion.valueAsNumber">
+					<input id="q4" name="iversion" type="range" min="2" max="9" value="5" step="1">
+					<output name="oversion">HTML 5</output>
+				</form>
+			</div>
+		</div>
+		<div class="question_block">
+			<div>
+				<p>5. Java Script - это язык программирования, выполняемый на стороне</p>
+				<input id="side_client" type="radio" name="side" value="c">
+				<label for="woman">клиента</label>
+				<input id="side_server" type="radio" name="side" value="s">
+				<label for="man">сервера</label> 
+			</div>
+		</div>
+		<div class="question_block">
+			<div>
+				<p>6. Стандартизированный язык гипертекстовой разметки:</p>
+				<input id="q6" type="text" placeholder="Впишите ответ сюда..." />
+			</div>
+		</div>
+		<input id="btn_finish" type="button" value="Завершить тест" onclick="finish()" />
+	</body>
+</html>
